@@ -173,15 +173,15 @@ const SignUp = () => {
                     disabled={role === "Bidder"}
                   >
                     <option value="">Select Your Bank</option>
-                    <option value="Meezan Bank">Canara Bank</option>
-                    <option value="UBL">HDFC Bank</option>
-                    <option value="HBL">SBI Bank</option>
-                    <option value="Allied Bank">Kotak Bank</option>
+                    <option value="Canara Bank">Canara Bank</option>
+                    <option value="HDFC Bank">HDFC Bank</option>
+                    <option value="SBI Bank">SBI Bank</option>
+                    <option value="Kotak Bank">Kotak Bank</option>
                   </select>
                   <input
                     type="text"
                     value={bankAccountNumber}
-                    placeholder="IBAN / IFSC"
+                    placeholder="IFSC Code"
                     onChange={(e) => setBankAccountNumber(e.target.value)}
                     className="text-[16px] py-2 bg-transparent border-b-[1px] border-b-stone-500 focus:outline-none sm:flex-1"
                     disabled={role === "Bidder"}
